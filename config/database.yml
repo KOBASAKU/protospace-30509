@@ -8,7 +8,7 @@ development:
   username: root
   password:
   host: localhost
-  database: protospace-30509_development
+  database: protospace_30509_development
 
 test:
   <<: *default
@@ -16,9 +16,10 @@ test:
   username: root
   password:
   host: localhost
-  database: protospace-30509_test
+  database: protospace_30509_test
 
 production:
   <<: *default
   adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
+
